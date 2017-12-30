@@ -20,8 +20,14 @@ export const router: Routes = [
     component: NotFoundComponent
   },
   {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
     path: '**',
-    redirectTo: 'home'
+    redirectTo: 'home',
+    pathMatch: 'full'
   }
 
 ];
